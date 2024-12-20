@@ -1,4 +1,4 @@
-import { CardPropTypes } from "../types/types";
+import { CardPropTypes } from "types/types";
 
 export default function Card({ children, imageSrc, imageAlt, title }: CardPropTypes) {
 

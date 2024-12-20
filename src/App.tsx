@@ -1,6 +1,5 @@
-import OrderSummaryCard from "./components/OrderSummaryCard";
-
-import "./sass/app.scss";
+import OrderSummaryCard from "components/OrderSummaryCard";
+import "sass/app.scss";
 
 function App() {
 

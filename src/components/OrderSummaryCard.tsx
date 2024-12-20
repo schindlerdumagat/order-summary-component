@@ -1,8 +1,6 @@
-import Card from "./Card";
-import Button from "./Button";
-
-import { OrderSummaryCardProptypes } from "../types/types";
-
+import Card from "components/Card";
+import Button from "components/Button";
+import { OrderSummaryCardProptypes } from "types/types";
 import CardImage from "/illustration-hero.svg";
 import MusicIcon from "/icon-music.svg";
 
