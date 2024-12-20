@@ -1,0 +1,124 @@
+@use 'reset';
+@use 'base';
+
+.card {
+    width: 90vw;
+    max-width: 28.125rem;
+    border-radius: 20px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 20px 20px rgba(base.$bright-blue, $alpha: 10.03%);
+
+    .card-image {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: clamp(1.4rem, 0.8rem + 2.5vw , 1.8rem);
+        font-weight: 900;
+        color: base.$dark-blue;
+        margin-bottom: 1rem;
+
+    }
+
+    .card-content {
+        padding: 1.5rem;
+
+        p {
+            font-size: clamp(0.9rem, 0.8rem + 0.45vw, 1rem);
+            font-weight: 500;
+            color: base.$desaturated-blue;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+
+            @media screen and (min-width: 48rem) {
+                padding: 0 30px;
+            }
+        }
+
+        .pricing {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 17px 16px;
+
+            @media screen and (min-width: 48rem) {
+                padding: 25px 24px;
+                margin-bottom: 2rem;
+            }
+
+            img {
+                margin-right: 1.25rem;
+            }
+
+            .plan {
+
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                margin-right: auto;
+                font-size: clamp(0.8rem, 0.7rem + 0.5vw, 0.9rem);
+
+                :first-child {
+                    color: base.$dark-blue;
+                    font-weight: 900;
+                }
+
+                :last-child {
+                    color: base.$desaturated-blue;
+                }
+            }
+
+            a {
+                color: base.$bright-blue;
+                font-size: clamp(0.8rem, 0.6rem + 1vw, 0.88rem);
+                font-weight: 700;
+                transition: 0.3s;
+                
+                &:hover {
+                    color: rgba(base.$bright-blue, 0.8);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .action-buttons-container {
+
+            :first-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+}
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 11px;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &.filled {
+        background-color: base.$bright-blue;
+        color: white;
+        box-shadow: 0 20px 20px rgba(base.$bright-blue, $alpha: 15.03%);
+
+        &:hover {
+            background-color: rgba(base.$bright-blue, 0.8);
+        }
+    }
+
+    &.text {
+        color: base.$desaturated-blue;
+
+        &:hover {
+            color: base.$dark-blue;
+        }
+    }
+}

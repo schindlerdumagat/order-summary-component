@@ -1,0 +1,39 @@
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+$font-stack: "Red Hat Display", serif;
+
+// Colors
+
+// Primary
+
+$pale-blue: #e0e8ff;
+$bright-blue: #3829e0;
+
+// Neutral
+
+$very-pale-blue: #f5f7ff;
+$desaturated-blue: #7280a7;
+$dark-blue: #1f2f56;
+
+body {
+    font-family: $font-stack;
+    font-weight: 500;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $pale-blue;
+    background-image: url("/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-width: 48rem) {
+        background-image: url("/pattern-background-desktop.svg");
+    }
+}
