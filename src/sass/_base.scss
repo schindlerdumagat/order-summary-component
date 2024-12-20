@@ -35,5 +35,10 @@ main {
 
     @media screen and (min-width: 48rem) {
         background-image: url("/pattern-background-desktop.svg");
+        background-size: auto;
+    }
+
+    @media screen and (min-width: 90rem) {
+        background-size: contain;
     }
 }
